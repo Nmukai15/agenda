@@ -1,0 +1,201 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #b71c1c;
+    padding: 1rem 0;
+    border-bottom: 1px solid #d32f2f;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav li {
+    margin-left: 20px;
+}
+
+.navbar nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seções de Conteúdo (Agenda, Formulários) */
+main {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+/* Formulários */
+.login-form, .form-reserva {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+/* Botões */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Agenda Table */
+.agenda-table {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    margin: 30px auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead th {
+    background-color: #b71c1c;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+
+.table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #424242;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #333333;
+}
+
+.table tbody tr:hover {
+    background-color: #424242;
+}
+
+/* Responsividade básica (mantida para funcionalidade) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem 20px;
+    }
+    
+    .navbar h1 {
+        margin-bottom: 15px;
+    }
+    
+    .navbar nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navbar nav li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar nav a {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .hero {
+        padding: 60px 20px;
+        margin: 30px auto;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .login-form, .form-reserva, .agenda-table {
+        padding: 30px;
+        margin: 30px auto;
+    }
+    
+    .table thead th, .table tbody td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
